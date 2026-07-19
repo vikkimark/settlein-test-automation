@@ -1,0 +1,35 @@
+Bug report
+
+Title: "Official Government Resources" link on Housing tasks does not point to a government website
+
+Description"
+On the Housing and Student Housing task screens, there is a section labeled "Official Government Resources" containing a button labeled "Official Application Portal." The label implies the link leads to a real Canadian or Ontario government website. 
+Instead, the link opens a private real estate listings website — the same commercial site that is already advertised, honestly, further up the same screen as a paid "Recommended Service." The app effectively shows one company's website twice on the same screen: once correctly labeled as a recommended partner, and once mislabeled as an official government source.
+
+Affected tasks:
+•  "Find Housing" — shown to Work Permit, Permanent Resident, and Visitor/Traveler profiles. Link points to rentals.ca.
+•  "Find Student Housing" — shown to International Student profiles. Link points to places4students.com.
+
+Steps to Reproduce:
+1.  Open the SettleIn app and click "Get Started."
+2.  Choose any profile (e.g., "Permanent Resident").
+3.  Fill in City, Family Status, and Arrival Date, then click "Create My Checklist."
+4.  On the Checklist tab, click the task called "Find Housing" (or "Find Student Housing" for the Student profile).
+5.  Scroll to the bottom of the task detail panel on the right.
+6.  Locate the section titled "Official Government Resources" and check where the "Official Application Portal" button actually links to (hover to preview the URL, or click through).
+
+Current Behavior (Actual):
+The "Official Application Portal" link under "Official Government Resources" opens:
+•  www.rentals.ca — for the "Find Housing" task
+•  www.places4students.com — for the "Find Student Housing" task
+Neither is a government domain. Both are commercial listings sites, and rentals.ca is the exact same company already promoted as a paid partner higher up on the same screen.
+
+Expected Behavior:
+A link labeled "Official Government Resources" should open an actual government website — a domain ending in .gc.ca or ontario.ca (or the equivalent for the applicable province).
+If no relevant government resource page exists to link to, the section should not be labeled as a government resource at all — e.g. it could be renamed to something accurate like "Helpful Housing Websites" instead of implying it is an official source.
+
+Screenshots:
+File Bug1-evidence.png Task detail panel for "Find Housing," showing Rentals.ca promoted twice on the same screen — once honestly as a "Top Pick" recommended service, and once further down mislabeled as "Official Government Resources":
+
+Build / System Info
+This was confirmed with two independent, automated browser tests (not a one-off manual check) — one in JavaScript, one in Python, both using Playwright. Each test completes onboarding, opens the Housing task, reads the actual URL behind "Official Application Portal," and asserts it belongs to a government domain. Both assertions fail as of the date above, confirming the bug is present in production. Anyone can re-run these tests at any time to check whether it has since been fixed.
