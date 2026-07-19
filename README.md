@@ -51,3 +51,4 @@ The Housing and Student Housing tasks label their resource link "Official Govern
 
 - `tests/known-issues.spec.js` (JavaScript)
 - `python-tests/test_known_issues.py` (Python)
+- `bug-reports/BUG-001-Housing-Link-Report.docx` — full written bug report (description, repro steps, current vs. expected behavior, screenshot, and build/system info)
