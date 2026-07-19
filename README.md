@@ -10,6 +10,11 @@ Playwright end-to-end test automation for [SettleIn](https://settle-in.vercel.ap
 
 Also includes a **documented, intentionally-failing regression test (BUG-001)**: the "Official Government Resources" link on Housing tasks actually points to a commercial real estate site, not a government domain. Rather than silently skip this, it's tracked as an expected failure in both suites so it shows up clearly in any test run.
 
+## Documents
+
+- `bug-reports/SettleIn-Test-Case-Document.docx` — the full test case matrix (all 29 cases: ID, steps, expected result, priority, status), organized page-by-page to match the spec files below
+- `bug-reports/BUG-001-Housing-Link-Report.docx` — written bug report for BUG-001 (see Known Issues)
+
 ## Known Issues
 
 **BUG-001 — "Official Government Resources" link is not a government URL for Housing tasks.**
