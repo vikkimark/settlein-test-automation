@@ -1,0 +1,10 @@
+node_modules/
+playwright-report/
+playwright-report-prod/
+test-results/
+blob-report/
+.DS_Store
+
+python-tests/.venv/
+python-tests/.pytest_cache/
+python-tests/__pycache__/
