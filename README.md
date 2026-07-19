@@ -12,8 +12,7 @@ Also includes a **documented, intentionally-failing regression test (BUG-001)**:
 
 ## Documents
 
-- `bug-reports/SettleIn-Test-Case-Document.docx` — the full test case matrix (all 29 cases: ID, steps, expected result, priority, status), organized page-by-page to match the spec files below
-- `bug-reports/BUG-001-Housing-Link-Report.docx` — written bug report for BUG-001 (see Known Issues)
+- [`bug-reports/Bug Report`](bug-reports/Bug%20Report) — written bug report for BUG-001, readable directly on GitHub (see Known Issues)
 
 ## Known Issues
 
@@ -22,4 +21,4 @@ The Housing and Student Housing tasks label their resource link "Official Govern
 
 - `tests/known-issues.spec.js` (JavaScript)
 - `python-tests/test_known_issues.py` (Python)
-- `bug-reports/BUG-001-Housing-Link-Report.docx` — full written bug report (description, repro steps, current vs. expected behavior, screenshot, and build/system info)
+- [`bug-reports/Bug Report`](bug-reports/Bug%20Report) — full written bug report (description, repro steps, current vs. expected behavior, screenshot, and build/system info)
